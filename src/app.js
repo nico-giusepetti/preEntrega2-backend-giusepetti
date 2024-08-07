@@ -46,11 +46,6 @@ io.on("connection", async (socket) => {
         io.sockets.emit("productos", await productManager.getProducts())
     });
 
-    // socket.on("message", async (data) => {
-    //     await MessageModel.create(data);
-    //     const messages = await MessageModel.find();
-    //     socket.emit("message", messages);
-    // });
 })
 
 
